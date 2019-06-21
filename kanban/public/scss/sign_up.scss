@@ -27,7 +27,7 @@ body {
 		padding: 10px;
 		border-radius: 90px;
 		transition:opacity .5s;
-		$:hover {
+		&:hover {
 			opacity:.6s;
 		}
 	}
