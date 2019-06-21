@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{app()->getLocale()}}">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>kanban</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -17,7 +18,18 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/sign_up.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/sign_in.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/top.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/button.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/common.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/header.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/card_edit.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/card_new.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/card_show.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/list_new.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('css/list_edit.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
